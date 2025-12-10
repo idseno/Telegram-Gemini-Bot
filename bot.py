@@ -1,21 +1,12 @@
-import telebot
-import google.generativeai as genai
-import time
-import json
-import os
-from telebot import types
-
-# ---------------------------------------------------------
-# 1. إعدادات البوت والمفاتيح (املأها هنا)
-# ---------------------------------------------------------
-
-TELEGRAM_BOT_TOKEN = "7231863128:AAFA6WMZZmHmpAl_dW6sBXqrPnkJhaEEtSc"
-
+import os 
+# ...
+TELEGRAM_BOT_TOKEN = os.environ.get("7231863128:AAFA6WMZZmHmpAl_dW6sBXqrPnkJhaEEtSc")
 API_KEYS = [
-    "AIzaSyB4NMbPldqHfiRnwGPGx1RScMdMbDRE6ac",
-    "AIzaSyAr4agg8dYLNkgIRKEU8G8618g23B3v2rQ",
-    "AIzaSyCMy66e3QLgT93a4YkUMtFhfwtezaczIOc"
+    os.environ.get("AIzaSyB4NMbPldqHfiRnwGPGx1RScMdMbDRE6ac"),
+    os.environ.get("AIzaSyAr4agg8dYLNkgIRKEU8G8618g23B3v2rQ"),
+    os.environ.get("AIzaSyCMy66e3QLgT93a4YkUMtFhfwtezaczIOc")
 ]
+ADMIN_ID = int(os.environ.get("641799099"))]
 
 ADMIN_ID = 641799099  # رقم الآيدي الخاص بك
 
@@ -199,4 +190,5 @@ def callback_inline(call):
     bot.answer_callback_query(call.id) # إيقاف "انتظار التحميل" من الزر
 
 print("✅ Bot Started Successfully (Final Version)")
+
 bot.infinity_polling()
