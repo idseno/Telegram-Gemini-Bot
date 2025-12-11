@@ -1,4 +1,5 @@
 pytelegrambotapi
-google-genai
+google-generativeai
 requests
+
 
