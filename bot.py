@@ -6,7 +6,7 @@ API_KEYS = [
     os.environ.get("AIzaSyAr4agg8dYLNkgIRKEU8G8618g23B3v2rQ"),
     os.environ.get("AIzaSyCMy66e3QLgT93a4YkUMtFhfwtezaczIOc")
 ]
-ADMIN_ID = int(os.environ.get("641799099"))]
+ADMIN_ID = int(os.environ.get("ADMIN_ID"))
 
 ADMIN_ID = 641799099  # رقم الآيدي الخاص بك
 
@@ -192,3 +192,4 @@ def callback_inline(call):
 print("✅ Bot Started Successfully (Final Version)")
 
 bot.infinity_polling()
+
