@@ -1,0 +1,4 @@
+pytelegrambotapi
+google-genai
+requests
+
