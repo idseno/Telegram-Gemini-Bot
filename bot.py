@@ -12,9 +12,9 @@ from telebot import types
 TELEGRAM_BOT_TOKEN = os.environ.get("7231863128:AAFA6WMZZmHmpAl_dW6sBXqrPnkJhaEEtSc")
 
 API_KEYS = [
-    os.environ.get("AIzaSyB4NMbPldqHfiRnwGPGx1RScMdMbDRE6ac"),
-    os.environ.get("AIzaSyAr4agg8dYLNkgIRKEU8G8618g23B3v2rQ"),
-    os.environ.get("AIzaSyCMy66e3QLgT93a4YkUMtFhfwtezaczIOc")
+    os.environ.get("AIzaSyCdWm1GmBKaelWbXxQe34V-PJsvU5lpG_I"),
+    os.environ.get("AIzaSyCZW2-9SqV8hnLN-7gQKrLAcS_mnfEKv9s"),
+    os.environ.get("AIzaSyDB0-GbrQv5Ujtg0mOkiQeEI3_8As_LIE4")
 ]
 
 # تم إضافة try/except لحل مشكلة 'NoneType' التي ظهرت في السجلات
@@ -255,4 +255,5 @@ def callback_inline(call):
 
 print("✅ Bot Started Successfully (Final Pro Version for Railway)")
 bot.infinity_polling()
+
 
